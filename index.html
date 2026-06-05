@@ -1,64 +1,66 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Luana Belusso</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+
 body{
-background:linear-gradient(180deg,#12051d,#1b082c,#0b0415);
-font-family:Poppins,sans-serif;
+margin:0;
+padding:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#12051d,#1f0933,#0d0218);
 color:white;
 text-align:center;
-margin:0;
-padding:20px;
+min-height:100vh;
 }
 
 .container{
-max-width:700px;
+max-width:500px;
 margin:auto;
+padding:30px 20px;
 }
 
 .perfil{
-width:250px;
-height:250px;
+width:180px;
+height:180px;
 border-radius:50%;
 object-fit:cover;
-border:4px solid #b47dff;
-box-shadow:0 0 30px #8a4fff;
+border:4px solid #d8b56a;
+box-shadow:0 0 25px #8a5cff;
 margin-top:20px;
 }
 
 h1{
-font-family:Cinzel,serif;
+font-family:'Cinzel',serif;
 color:#d8b56a;
+margin-top:15px;
+margin-bottom:10px;
 }
 
 .bio{
-background:rgba(255,255,255,.08);
+background:rgba(255,255,255,0.08);
 padding:20px;
 border-radius:20px;
-margin:20px 0;
-line-height:1.8;
-}
-
-audio{
-width:100%;
-margin-top:20px;
+line-height:1.7;
+margin-bottom:25px;
 }
 
 .botao{
 display:block;
-padding:18px;
-margin:12px 0;
 text-decoration:none;
 color:white;
-background:linear-gradient(90deg,#6d2bd8,#9f6cff);
+padding:18px;
+margin:12px 0;
 border-radius:15px;
+background:linear-gradient(90deg,#6b2fb8,#9d5cff);
 font-weight:bold;
+font-size:18px;
 transition:.3s;
 }
 
@@ -66,18 +68,42 @@ transition:.3s;
 transform:scale(1.03);
 }
 
+.audio-player{
+margin:20px 0;
+padding:15px;
+background:rgba(255,255,255,0.08);
+border-radius:15px;
+}
+
 footer{
 margin-top:30px;
+font-size:14px;
 opacity:.8;
 }
+
+.estrelas{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+background-image:
+radial-gradient(circle,#fff 1px,transparent 1px);
+background-size:40px 40px;
+opacity:0.15;
+}
+
 </style>
 </head>
 
 <body>
 
+<div class="estrelas"></div>
+
 <div class="container">
 
-<img src="perfil.png" class="perfil">
+<img src="perfil.jpg" class="perfil">
 
 <h1>✨ Luana Belusso ✨</h1>
 
@@ -93,49 +119,70 @@ Busco integrar conhecimento, autoconhecimento, espiritualidade e respeito à div
 
 Entre em contato pelas minhas redes sociais e agende seu horário.
 
-💜 Consultas e serviços são realizados mediante pagamento.
+💜 Consultas e serviços são oferecidos de forma profissional mediante pagamento.
 
 </div>
 
-<h2>🎵 Bruxa de Verdade</h2>
+<div class="audio-player">
 
-<audio controls>
-<source src="bruxa.mp3" type="audio/mpeg">
+🎵 Música do Portal
+
+<br><br>
+
+<audio controls autoplay loop>
+<source src="musica.mp3" type="audio/mpeg">
 Seu navegador não suporta áudio.
 </audio>
 
-<a class="botao" href="https://www.instagram.com/luanabelusso?igsh=ZzI3eWExejV2YzU3" target="_blank">
+</div>
+
+<a class="botao"
+href="https://www.instagram.com/luanabelusso?igsh=ZzI3eWExejV2YzU3"
+target="_blank">
 📸 Instagram
 </a>
 
-<a class="botao" href="https://youtube.com/@luana.belusso?si=cVO47I_lxWrvrfkj" target="_blank">
+<a class="botao"
+href="https://youtube.com/@luana.belusso?si=cVO47I_lxWrvrfkj"
+target="_blank">
 ▶️ YouTube
 </a>
 
-<a class="botao" href="https://www.tiktok.com/@luanabelusso6" target="_blank">
+<a class="botao"
+href="https://www.tiktok.com/@luanabelusso6"
+target="_blank">
 🎵 TikTok
 </a>
 
-<a class="botao" href="https://t.me/Luanabelusso" target="_blank">
+<a class="botao"
+href="https://t.me/Luanabelusso"
+target="_blank">
 ✈️ Telegram
 </a>
 
-<a class="botao" href="https://discord.gg/UAZpCJmN" target="_blank">
+<a class="botao"
+href="https://discord.gg/UAZpCJmN"
+target="_blank">
 🎮 Discord
 </a>
 
-<a class="botao" href="https://services.zangi.com/dl/conversation/1004714531" target="_blank">
-📱 Zangi
+<a class="botao"
+href="https://services.zangi.com/dl/conversation/1004714531"
+target="_blank">
+📱 Zangi Privado
 </a>
 
 <footer>
-✨ Gratidão por sua visita ✨<br>
+
+✨ Gratidão por sua visita ✨
+
+<br><br>
+
 © 2026 Luana Belusso
+
 </footer>
 
 </div>
 
 </body>
 </html>
-perfil.png
-bruxa.mp3
